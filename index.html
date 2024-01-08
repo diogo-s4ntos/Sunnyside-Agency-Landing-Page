@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="root.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <!-- Font Size -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <section id="header">
+      <header>
+        <img src="images/logo.svg" alt="Logo">
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#" id="contact">Contact</a></li>
+          </ul>
+        </nav>
+        <input type="checkbox" onchange="menu(this)">
+      </header>
+      <div id="phone-menu">
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="we-are-creatives">
+        <p>We are creatives</p>
+        <img src="images/icon-arrow-down.svg" alt="Arrow Down">
+      </div>
+    </section>
+    <section id="squares">
+      <div class="white-square">
+        <div id="white-square-content-1">
+          <p class="white-square-title">Transform your brand</p>
+          <p class="white-square-text">We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="white-square">
+        <div id="white-square-content-2">
+          <p class="white-square-title">Stand out to the right audience</p>
+          <p class="white-square-text">Using a collaborative formula of designers, researchers, photographers, videographers, and    copywriters, we'll build and extend your brand in digital places.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+      <div class="square">
+        <div class="square-container">
+          <p class="square-title">Graphic Design</p>
+          <p class="square-text">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.</p>
+        </div>
+      </div>
+      <div class="square">
+        <div class="square-container">
+          <p class="square-title-2">Photography</p>
+          <p class="square-text-2">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <p id="testimonials-title">Client testimonials</p>
+      <div id="testimonials-container">
+        <div class="testimonials">
+          <img src="images/image-emily.jpg" alt="Emily">
+          <p class="testimonials-text">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <p class="testimonials-name">Emily R.</p>
+          <p class="testimonials-office">Marketing Director</p>
+        </div>
+        <div class="testimonials">
+          <img src="images/image-thomas.jpg" alt="Emily">
+          <p class="testimonials-text">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+          <p class="testimonials-name">Thomas S.</p>
+          <p class="testimonials-office">Chief Operating Officer</p>
+        </div>
+        <div class="testimonials">
+          <img src="images/image-jennie.jpg" alt="Emily">
+          <p class="testimonials-text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <p class="testimonials-name">Jennie F.</p>
+          <p class="testimonials-office">Business Owner</p>
+        </div>
+      </div>
+    </section>
+    <section id="footer-imgs">
+      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="Milk Bottles">
+      <img src="images/desktop/image-gallery-orange.jpg" alt="Orange">
+      <img src="images/desktop/image-gallery-cone.jpg" alt="Cone">
+      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar Cubes">
+    </section>
+    <footer>
+      <div id="footer-menu">
+        <img src="images/logo.svg" alt="Logo" id="logo" width="165rem">
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="medias">
+        <a href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="images/icon-pinterest.svg" alt="Pinterest"></a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Diogo Santos</a>.
+  </div> -->
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
